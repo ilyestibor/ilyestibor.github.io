@@ -1,3 +1,44 @@
-jobb technikai support kellene
-dadada
-baakakak
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vega-Lite Visualisation Stub</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; }
+    #vis { width: 600px; height: 400px; }
+  </style>
+</head>
+<body>
+  <h1>Vega-Lite Visualisation Stub</h1>
+  <div id="vis"></div>
+  <script>
+    const spec = {
+      $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
+      description: 'A simple bar chart stub.',
+      data: {
+        values: [
+          { category: 'A', value: 28 },
+          { category: 'B', value: 55 },
+          { category: 'C', value: 43 },
+          { category: 'D', value: 91 },
+          { category: 'E', value: 81 },
+          { category: 'F', value: 53 },
+          { category: 'G', value: 19 },
+          { category: 'H', value: 87 }
+        ]
+      },
+      mark: 'bar',
+      encoding: {
+        x: { field: 'category', type: 'nominal', axis: { labelAngle: 0 } },
+        y: { field: 'value', type: 'quantitative' }
+      }
+    };
+
+    vegaEmbed('#vis', spec, { actions: false });
+  </script>
+</body>
+</html>
