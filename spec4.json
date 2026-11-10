@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Affective polarization index, 2008-2024.",
+  "data": {
+    "values": [
+      { "year": 2008, "polarization": 34 },
+      { "year": 2010, "polarization": 38 },
+      { "year": 2012, "polarization": 45 },
+      { "year": 2014, "polarization": 52 },
+      { "year": 2016, "polarization": 61 },
+      { "year": 2018, "polarization": 68 },
+      { "year": 2020, "polarization": 75 },
+      { "year": 2022, "polarization": 81 },
+      { "year": 2024, "polarization": 87 }
+    ]
+  },
+  "mark": { "type": "area", "line": true, "point": true },
+  "encoding": {
+    "x": { "field": "year", "type": "temporal", "axis": { "format": "%Y", "title": "Year" } },
+    "y": { "field": "polarization", "type": "quantitative", "axis": { "title": "Polarization index (0-100)" } }
+  }
+}

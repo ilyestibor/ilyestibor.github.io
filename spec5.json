@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Share of local news coverage by topic, 2024.",
+  "data": {
+    "values": [
+      { "topic": "Crime", "share": 32 },
+      { "topic": "Politics", "share": 24 },
+      { "topic": "Weather", "share": 14 },
+      { "topic": "Sports", "share": 12 },
+      { "topic": "Business", "share": 10 },
+      { "topic": "Other", "share": 8 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": { "field": "topic", "type": "nominal", "axis": { "labelAngle": 0 }, "sort": { "op": "sum", "field": "share", "order": "descending" } },
+    "y": { "field": "share", "type": "quantitative", "axis": { "title": "Share of coverage (%)" } },
+    "color": { "field": "topic", "type": "nominal", "legend": null }
+  }
+}

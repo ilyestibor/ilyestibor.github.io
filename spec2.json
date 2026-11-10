@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Daily hours spent consuming news by platform, 2015-2024.",
+  "data": {
+    "values": [
+      { "year": 2015, "platform": "Print", "hours": 0.8 },
+      { "year": 2015, "platform": "Broadcast TV", "hours": 1.4 },
+      { "year": 2015, "platform": "Social Media", "hours": 0.9 },
+      { "year": 2017, "platform": "Print", "hours": 0.5 },
+      { "year": 2017, "platform": "Broadcast TV", "hours": 1.2 },
+      { "year": 2017, "platform": "Social Media", "hours": 1.5 },
+      { "year": 2019, "platform": "Print", "hours": 0.3 },
+      { "year": 2019, "platform": "Broadcast TV", "hours": 1.0 },
+      { "year": 2019, "platform": "Social Media", "hours": 2.1 },
+      { "year": 2021, "platform": "Print", "hours": 0.2 },
+      { "year": 2021, "platform": "Broadcast TV", "hours": 0.9 },
+      { "year": 2021, "platform": "Social Media", "hours": 2.7 },
+      { "year": 2023, "platform": "Print", "hours": 0.1 },
+      { "year": 2023, "platform": "Broadcast TV", "hours": 0.8 },
+      { "year": 2023, "platform": "Social Media", "hours": 3.2 }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": { "field": "year", "type": "temporal", "axis": { "format": "%Y", "title": "Year" } },
+    "y": { "field": "hours", "type": "quantitative", "axis": { "title": "Hours per day" } },
+    "color": { "field": "platform", "type": "nominal", "title": "Platform" }
+  }
+}

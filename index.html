@@ -3,22 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vega-Lite Visualisation Stub</title>
+  <title>A Fading Confidence</title>
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   <style>
-    body { font-family: system-ui, sans-serif; margin: 2rem; }
-    #vis { width: 50%; height: 400px; }
+    body { font-family: Georgia, serif; line-height: 1.7; color: #1a1a1a; max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
+    header { border-bottom: 1px solid #ccc; padding-bottom: 1rem; margin-bottom: 2rem; }
+    h1 { font-size: 2rem; margin: 0 0 0.5rem 0; }
+    .byline { font-style: italic; color: #555; font-size: 0.95rem; }
+    section { margin-bottom: 3rem; }
+    p { margin: 0 0 1.2rem 0; text-align: justify; }
+    .viz-wrap { width: 50%; height: 400px; margin: 2rem auto; display: block; }
+    .pullquote { font-size: 1.25rem; font-style: italic; color: #444; border-left: 3px solid #999; padding-left: 1rem; margin: 2rem 0; }
+    footer { margin-top: 3rem; border-top: 1px solid #ccc; padding-top: 1rem; font-size: 0.85rem; color: #666; }
   </style>
 </head>
 <body>
-  <h1>Vega-Lite Visualisation Stub</h1>
-  <div id="vis"></div>
-  <script>
-    fetch('spec.json').then(res => res.json()).then(spec => {
-      vegaEmbed('#vis', spec, { actions: false });
-    });
-  </script>
+  <header>
+    <h1>A Fading Confidence: Why Trust Is the Currency We Are Spending Too Fast</h1>
+    <div class="byline">By the Editor &middot; Opinion &middot; November 2026</div>
+  </header>
+
+  <section id="intro">
+    <p>There is a quiet erosion happening beneath the noise of daily headlines, one that no election cycle or market rally can easily reverse. It is the slow draining of trust from our institutions, from our public figures, and from one another. We treat trust as if it were an infinite well, something that replenishes itself simply by the passage of time. It does not. Trust is a stock, carefully accumulated over years and depleted in moments, and we are drawing it down faster than any generation before us. The cost of that overdraft is not measured in dollars but in legitimacy, and once legitimacy is gone, it is extraordinarily expensive to buy back.</p>
+  </section>
+
+  <section id="viz-trust">
+    <div class="viz-wrap" id="vis1"></div>
+    <script>
+      fetch('spec1.json').then(res => res.json()).then(spec => {
+        vegaEmbed('#vis1', spec, { actions: false });
+      });
+    </script>
+    <p>Consider the numbers. In 2010, more than six in ten citizens said they had confidence in the major institutions that shape daily life courts, the press, schools, and government agencies. By 2024, that figure had fallen below thirty percent. The decline is not a statistical blip; it is a structural shift, a cliff that we have walked off while insisting the ground beneath us was still solid. Each scandal, each broken promise, each algorithmically amplified outrage chips away another fragment. We have grown so accustomed to disappointment that we no longer notice when it becomes the default. Trust is not a renewable resource in the way we pretend; it is a finite reservoir, and we are pumping it dry.</p>
+  </section>
+
+  <section id="viz-media">
+    <div class="viz-wrap" id="vis2"></div>
+    <script>
+      fetch('spec2.json').then(res => res.json()).then(spec => {
+        vegaEmbed('#vis2', spec, { actions: false });
+      });
+    </script>
+    <p>The danger is not merely that people disagree. Disagreement is the oxygen of democracy. The danger is that disagreement has hardened into disbelief, and disbelief into disengagement. When trust collapses, citizens do not become more vigilant; they become more cynical. They tune out. They assume the worst of everyone and act accordingly. A society that no longer believes its own institutions cannot govern itself, because governance ultimately rests on consent, and consent rests on belief. We are living through that belief deficit now, and the symptoms show up everywhere from falling voter turnout to the collapse of local news coverage.</p>
+  </section>
+
+  <section id="viz-engagement">
+    <div class="viz-wrap" id="vis3"></div>
+    <script>
+      fetch('spec3.json').then(res => res.json()).then(spec => {
+        vegaEmbed('#vis3', spec, { actions: false });
+      });
+    </script>
+    <p>We have built machines that excel at destroying trust while pretending to build it. Social media platforms reward outrage over nuance, conflict over compromise, and the viral takedown over the patient explanation. The incentives are clear: the angrier the post, the wider the reach. The angrier the electorate, the easier it is to mobilize but never to persuade. We have mistaken attention for authority and volume for truth. The result is a public square where everyone is shouting and no one is listening, where every institution is presumed guilty until proven innocent, and where the burden of proof has become impossibly high. Engagement metrics have become the only currency that matters, and they are a poor substitute for the slower, harder work of building shared understanding.</p>
+  </section>
+
+  <section id="viz-polarization">
+    <div class="viz-wrap" id="vis4"></div>
+    <script>
+      fetch('spec4.json').then(res => res.json()).then(spec => {
+        vegaEmbed('#vis4', spec, { actions: false });
+      });
+    </script>
+    <p>Yet institutions do not have to be perfect to be worthy of trust. They have to be honest. They have to correct their mistakes in public. They have to show their work, admit when they do not know, and resist the temptation to spin every failure into a victory. Trust is not built by flawless performance; it is built by transparency, consistency, and accountability. It is built when an organization says, We got this wrong, here is what we are doing about it, and then actually does it. That kind of institutional humility is in short supply today, and its absence shows up in the data as clearly as any economic indicator.</p>
+  </section>
+
+  <section id="viz-coverage">
+    <div class="viz-wrap" id="vis5"></div>
+    <script>
+      fetch('spec5.json').then(res => res.json()).then(spec => {
+        vegaEmbed('#vis5', spec, { actions: false });
+      });
+    </script>
+    <p>What can be done? The answer is neither dramatic nor immediate, which is precisely why it is so difficult. There is no single law, no single app, no single leader who can restore trust by decree. It must be rebuilt institution by institution, conversation by conversation, promise by kept promise. It requires journalists who correct themselves as loudly as they publish. It requires officials who answer questions instead of evading them. It requires platforms that slow down the spread of anger rather than accelerate it. Most of all, it requires citizens willing to extend trust conditionally, to verify rather than to dismiss, and to participate rather than to withdraw.</p>
+  </section>
+
+  <section id="conclusion">
+    <p>History does not offer many examples of societies that thrived while their people stopped believing in one another. Civilization is, at root, a collection of shared agreements about what is true, what is fair, and what we owe each other. When those agreements fray, the institutions built atop them follow. We are watching that process unfold in real time, and the charts on this page are the scoreboard. The question is no longer whether trust can be restored; it is whether we are willing to do the slow, unglamorous work of restoring it before there is nothing left to rebuild.</p>
+  </section>
+
+  <footer>&copy; 2026 Opinion Desk. All rights reserved.</footer>
 </body>
 </html>

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Public trust in major institutions, 2010-2024.",
+  "data": {
+    "values": [
+      { "year": 2010, "trust": 62 },
+      { "year": 2012, "trust": 58 },
+      { "year": 2014, "trust": 51 },
+      { "year": 2016, "trust": 44 },
+      { "year": 2018, "trust": 39 },
+      { "year": 2020, "trust": 35 },
+      { "year": 2022, "trust": 31 },
+      { "year": 2024, "trust": 28 }
+    ]
+  },
+  "mark": { "type": "line", "point": true },
+  "encoding": {
+    "x": { "field": "year", "type": "temporal", "axis": { "format": "%Y", "title": "Year" } },
+    "y": { "field": "trust", "type": "quantitative", "axis": { "title": "Public trust (%)" } }
+  }
+}

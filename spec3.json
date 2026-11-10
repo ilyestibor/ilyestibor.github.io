@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Civic engagement vs household income by age cohort.",
+  "data": {
+    "values": [
+      { "income": 25000, "engagement": 32, "age": "18-29" },
+      { "income": 40000, "engagement": 38, "age": "18-29" },
+      { "income": 60000, "engagement": 45, "age": "18-29" },
+      { "income": 25000, "engagement": 41, "age": "30-49" },
+      { "income": 40000, "engagement": 52, "age": "30-49" },
+      { "income": 60000, "engagement": 61, "age": "30-49" },
+      { "income": 25000, "engagement": 49, "age": "50+" },
+      { "income": 40000, "engagement": 60, "age": "50+" },
+      { "income": 60000, "engagement": 70, "age": "50+" }
+    ]
+  },
+  "mark": { "type": "point", "filled": true, "size": 100 },
+  "encoding": {
+    "x": { "field": "income", "type": "quantitative", "axis": { "title": "Household income ($)" } },
+    "y": { "field": "engagement", "type": "quantitative", "axis": { "title": "Civic engagement score" } },
+    "color": { "field": "age", "type": "nominal", "title": "Age cohort" },
+    "tooltip": [{ "field": "income", "type": "quantitative" }, { "field": "engagement", "type": "quantitative" }, { "field": "age", "type": "nominal" }]
+  }
+}
